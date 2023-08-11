@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+input, button {
+    font-family: inherit;
+}
+
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    text-align: center;
+}
+
+.poster {
+    background-image: url(images/dark-ribs.jpg);
+    background-color: #404040;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem 2rem 2rem;
+    margin-bottom: 2rem;
+}
+
+.poster-top {
+    color: #f18119;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    border-top: 0.75em solid #f18119;
+    padding-top: 0.2rem;
+    letter-spacing: 0.05rem;
+}
+
+.poster-bot {
+    text-transform: uppercase;
+}
+
+h1 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 3.5rem;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+h2 {
+    color: #f18119;
+    font-size: 1.75rem;
+}
+
+.login {
+    padding: 1.5rem;
+}
+
+.grey-heading {
+    color: #404040;
+}
+
+.login .orange {
+    color: #f18119;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.login p {
+    font-size: 1.125rem;
+    color: #404040;
+}
+
+input, button {
+    border: 3px solid rgba(64, 64, 64, 0.5);
+    border-radius: 8px;
+    width: 80%;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 1.125rem;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    outline: none;
+}
+
+button {
+    border: none;
+    background-image: linear-gradient(to left, #ff713b, #ffa51d);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    transform: scale(1);
+    transition: 250ms;
+}
+
+button:hover, button:focus {
+    color: #000000;
+    transform: scale(1.1);
+}
+
+button:active {
+    color: hsl(0, 0%, 50%);
+}
+
+.login .small {
+    font-size: 0.625rem;
+    width: 45%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 566px) {
+    body {
+        display: flex;
+        /* max-width: 1000px;
+        margin: 0 auto; */
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .poster {
+        width: 50%;
+        max-width: 565px;
+        min-height: 100vh;
+        margin-bottom: 0;
+        background-size: cover;
+    }
+
+    .login {
+        width: 50%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
